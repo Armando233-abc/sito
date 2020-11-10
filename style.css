@@ -31,12 +31,12 @@ ul li{
     overflow: hidden;
 }
 ul li:nth-child(1){
-    background: url(pandemia_ambiente1.png);
+    background: url(img/pandemia_ambiente1.png);
     background-size: cover;
     background-position: left;
 }
 ul li:nth-child(2){
-    background: url(pandemia_ambiente2.png);
+    background: url(img/pandemia_ambiente2.png);
     background-size: cover;
     background-position: left;
 }
