@@ -1,82 +1,105 @@
 /*Fatto da Armando*/
-
-
-/*Fatto da crisi*/
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: sans;
-}
-ul{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #ccc;
-    margin: 0;
-    padding: 0;
-}
-ul li{
-    list-style: none;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-right: 1px solid #000;
-    float: left;
-    box-sizing: border-box;
-    transition: 0.5s;
-    text-align: center;
-    overflow: hidden;
-}
-ul li:nth-child(1){
-    background: url(img/pandemia_ambiente1.png);
-    background-size: cover;
-    background-position: left;
-}
-ul li:nth-child(2){
-    background: url(img/pandemia_ambiente2.png);
-    background-size: cover;
-    background-position: left;
-}
-ul:hover li{
-    width: 10%;
-}
-
-ul li:hover{
-    width: 60%;
-}
-
-ul li .content{
-    position: absolute;
-    bottom: -100%;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0,0, 0.8);
-    box-sizing: border-box;
-    color: #ffffff;
-    opacity: 1;
-}
-
-ul li:hover .content{
-    bottom: 0;
-    transition: 0.5s;
-    transition-delay: 0.5s;
-    opacity: 1;
-}
 #svant_vant{
     display: flex;
     flex-direction: row;
     margin-left: 20px;
     margin-right: 20px;
 }
-
-
 /*Smathphone*/
 @media (max-width: 415px){
     img{width: 100%; height: 35vh;}
     #svant_vant{flex-direction: column;}
+
 }
 
+
 /*Fatto da crisi*/
+
+#ambiente_content{
+    position: relative;
+    /*display: flex;*/
+    flex-direction: row;
+    overflow: hidden ; 
+}
+#testo_ambiente{
+    flex-grow: 5;
+}
+#img_ambiente{
+    flex-grow: 1;
+}
+
+.container{
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    width: 70%;
+    height: 0;
+    padding-bottom: 40%;
+    background: #4c4c4c;
+    border: solid 10px #2c2c2c;
+}
+.slide_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.slide_img img{
+    width: 100%;
+    height: 100%;
+}
+
+#i1, #i2, #i3{
+    display: none;
+}
+
+.pre .ntx{
+    width: 12%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(88, 88, 88, .4);
+    z-index: 99;
+    cursor: pointer;
+}
+
+.pre{
+    left: 0;
+}
+.ntx{
+    right: 0;
+}
+
+.nav{
+    width: 100%;
+    height: 11px;
+    bottom: 12%;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+}
+
+.dots{
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(0,0,0,.6);
+}
+.slide_img{
+    z-index: -1;
+}
+
+#i1:checked ~ #italia,
+#i2:checked ~ #francia,
+#i3:checked ~ #spagna{
+    z-index: 9;
+}
+
+#i1:checked ~ #dot1,
+#i2:checked ~ #dot2,
+#i3:checked ~ #dot3{
+    background: #ffffff;
+}

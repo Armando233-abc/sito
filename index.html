@@ -20,29 +20,33 @@
     </div>
 
     <!--Parte di Crisci-->
-    <ul>
-        <li>
-            <div class="content">
-                <h2>What </h2>
-                <p>Lorem ipsum dolor sit, 
-                    amet consectetur adipisicing elit. Dolorum 
-                    provident in accusantium magni a voluptas 
-                    veniam eligendi obcaecati mollitia, quos
-                     atque. Blanditiis sit alias, 
-                    rerum natus pariatur cum vero quia?</p>
-            </div>
-        </li>
-        <li>
-            <div class="content">
-                <h2>What</h2>
-                <p>Lorem ipsum dolor sit, 
-                    amet consectetur adipisicing elit. Dolorum 
-                    provident in accusantium magni a voluptas 
-                    veniam eligendi obcaecati mollitia, quos
-                     atque. Blanditiis sit alias, 
-                    rerum natus pariatur cum vero quia?</p>
-            </div>
-        </li>
-    </ul>
+    <div class="container">
+
+        <input type="radio" name="images" id="i1" checked>
+        <input type="radio" name="images" id="i2">
+        <input type="radio" name="images" id="i3">
+
+        <div class="slide_img" id="italia">
+            <img src="img/italia.jpg" alt="">
+                <label for="i3" class="pre"></label>
+                <label for="i2" class="ntx"></label>
+        </div>
+        <div class="slide_img" id="francia">
+            <img src="img/francia.jpg" alt="">
+                <label for="i1" class="pre"></label>
+                <label for="i3" class="ntx"></label>
+        </div>
+        <div class="slide_img" id="spagna">
+            <img src="img/spagna.gif" alt="">
+                <label for="i2" class="pre"></label>
+                <label for="i1" class="ntx"></label>
+        </div>
+
+        <div class="nav">
+            <label class="dots" id="dot1" for="i1"></label>
+            <label class="dots" id="dot2" for="i2"></label>
+            <label class="dots" id="dot3" for="i3"></label>
+        </div>
+    </div>
 </body>
 </html>
