@@ -1,0 +1,12 @@
+/*Fatto da Armando*/
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/*Smathphone*/
+@media (max-width: 415px){
+    img{width: 100%; height: 35vh;}
+    .container{flex-direction: column;}
+}
