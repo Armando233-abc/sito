@@ -19,7 +19,7 @@ h1{
 
 
 /*Smathphone*/
-@media (max-width: 415px){
+@media (max-width: 576px){
     img{width: 100%; height: 30vh;}
     .container{flex-direction: column;}
 }
