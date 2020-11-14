@@ -186,11 +186,32 @@ body{
     color: #2f2e41;
 }
 
-@media (min-width: 415px ){
+#frame_agree{
+    margin-top: -200px;
+    width: 100%;
+}
+#testo_pro, #testo_contro{
+    text-align: center;
+}
+#didattica_a_distanza{
+    margin-top: 20px;
+}
+#didattica_a_distanza img{
+    width: 90vw;
+}
+#pro, #contro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 576px ){
     #container_immuni .card{
-        width: 80vw;
+        width: 80vw;   
     }
-    
+    #container_immuni .card .content_immuni{
+        margin-top: 100px;
+    }
     #container_immuni .card:hover{
         height: 80vh;
         width: 90vw;
@@ -198,5 +219,49 @@ body{
     #container_immuni  .card:hover .content_immuni{
         margin-top: 650px;
     }
+    .images_pro img{
+        width: 90vw;
+    }
+    #didattica_a_distanza{
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 1023px){
+    #container_immuni .card{
+        width: 80vw;   
+        flex-direction: row;
+    }
+    #container_immuni .card .content_immuni{
+        margin-top: 100px;
+    }
+    #container_immuni .card:hover{
+        height: 80vh;
+        width: 90vw;
+    }
+    #container_immuni  .card:hover .content_immuni{
+        margin-top: 650px;
+    }
+    .images_pro img{
+        width: 80%;
+    }
+    #didattica_a_distanza{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    #pro, #contro {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #img_pro{
+        flex-grow: 1
+    }
+
+    #testo_pro{
+        flex-grow: 2;
+    }
+
 
 }
