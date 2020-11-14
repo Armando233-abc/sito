@@ -29,4 +29,4 @@ chi vince e chi perde:
 Coronavirus: le app per viaggiare durante la quarantena:
     https://www.lavocedibolzano.it/coronavirus-le-app-per-viaggiare-durante-la-quarantena/
 
-vantaggi economici aziende tecnologiche e altro
+sistuazione economica mondiale
