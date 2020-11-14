@@ -20,33 +20,95 @@
     </div>
 
     <!--Parte di Crisci-->
-    <div class="container">
+    <div id="ambiente">
+        <div id="testo">
+            <p id="change">
+                La malattia da coronavirus (COVID-19) si è 
+                diffusa rapidamente in tutto il mondo, 
+                interessando 170 paesi con oltre 530.000 
+                casi confermati in tutto il mondo. 
+                L'epidemia di coronavirus è stata dichiarata
+                una pandemia globale dall'Organizzazione
+                mondiale della sanità e da allora ha affermato 
+                che la malattia sta "accelerando". 
+                Al fine di frenare la diffusione dell'epidemia di COVID-19, 
+                i paesi di tutto il mondo stanno implementando misure rigorose, 
+                mettendo le città e persino interi paesi in blocco.
+                Il satellite Sentinel-5P di Copernicus 
+                ha recentemente mappato l'inquinamento 
+                atmosferico in Europa e Cina e ha rivelato 
+                un calo significativo delle concentrazioni 
+                di biossido di azoto, in coincidenza con 
+                le rigorose misure di quarantena.
+                Le nuove immagini illustrano chiaramente 
+                una forte riduzione delle concentrazioni 
+                di biossido di azoto nelle principali 
+                città d'Europa, in particolare Milano, Parigi e Madrid.
+            </p>
+        </div>
+        <div id="container">
 
-        <input type="radio" name="images" id="i1" checked>
-        <input type="radio" name="images" id="i2">
-        <input type="radio" name="images" id="i3">
-
-        <div class="slide_img" id="italia">
-            <img src="img/italia.jpg" alt="">
-                <label for="i3" class="pre"></label>
-                <label for="i2" class="ntx"></label>
+            <input type="radio" name="images" id="i1" checked>
+            <input type="radio" name="images" id="i2">
+            <input type="radio" name="images" id="i3">
+    
+            <div class="slide_img" id="italia">
+                <img src="img/italia.jpg" alt="">
+                    <label for="i3" class="pre"></label>
+                    <label for="i2" class="ntx"></label>
+            </div>
+            <div class="slide_img" id="francia">
+                <img src="img/francia.jpg" alt="">
+                    <label for="i1" class="pre"></label>
+                    <label for="i3" class="ntx"></label>
+            </div>
+            <div class="slide_img" id="spagna">
+                <img src="img/spagna.gif" alt="">
+                    <label for="i2" class="pre"></label>
+                    <label for="i1" class="ntx"></label>
+            </div>
+    
+            <div class="nav">
+                <label class="dots" id="dot1" for="i1"></label>
+                <label class="dots" id="dot2" for="i2"></label>
+                <label class="dots" id="dot3" for="i3"></label>
+            </div>
         </div>
-        <div class="slide_img" id="francia">
-            <img src="img/francia.jpg" alt="">
-                <label for="i1" class="pre"></label>
-                <label for="i3" class="ntx"></label>
-        </div>
-        <div class="slide_img" id="spagna">
-            <img src="img/spagna.gif" alt="">
-                <label for="i2" class="pre"></label>
-                <label for="i1" class="ntx"></label>
-        </div>
-
-        <div class="nav">
-            <label class="dots" id="dot1" for="i1"></label>
-            <label class="dots" id="dot2" for="i2"></label>
-            <label class="dots" id="dot3" for="i3"></label>
-        </div>
+    </div>
+    <div id="immuni">
+        <div id="container_immuni">
+            <h1 id="titolo">App Immuni</h1>
+                <div class="card">
+                    <div class="imgBx">
+                        <img src= "img/agree.svg" alt="">
+                    </div>
+                    <div class="content_immuni">
+                        <h2>Card One</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Fugiat explicabo nisi debitis voluptatem, 
+                            rem nobis molestiae, ab, voluptate excepturi 
+                            sint libero non a hic! Error minus quis dignissimos 
+                            tempora consequatur.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBx">
+                        <img src= "img/disagree.svg" alt="">
+                    </div>
+                    <div class="content_immuni">
+                        <h2>Card Two</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Fugiat explicabo nisi debitis voluptatem, 
+                            rem nobis molestiae, ab, voluptate excepturi 
+                            sint libero non a hic! Error minus quis dignissimos 
+                            tempora consequatur.
+                        </p>
+                    </div>
+                </div>
+            </div>
     </div>
 </body>
 </html>
