@@ -1,7 +1,7 @@
 /*Fatto da Armando*/
 .container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -16,10 +16,27 @@ h1{
     margin-bottom: 20px;
 }
 
+.contenuto{
+    display: flex;
+    flex-direction: row;
+}
 
 
 /*Smathphone*/
-@media (max-width: 415px){
+@media (max-width: 576px){
     img{width: 100%; height: 30vh;}
-    .container{flex-direction: column;}
+    .contenuto{flex-direction: column;}
+}
+
+
+/*Tablet*/
+@media (min-width: 765px){
+    h1{
+        font-size: 60px;
+    }
+
+    p{
+        margin-left: 50px;
+        font-size: 40px;
+    }
 }
