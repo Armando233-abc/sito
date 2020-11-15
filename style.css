@@ -195,16 +195,16 @@ body{
 }
 #didattica_a_distanza{
     margin-top: 20px;
-}
-#didattica_a_distanza img{
-    width: 90vw;
-}
-#pro, #contro{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+#didattica_a_distanza img{
+    width: 80vw;
+}
+
 @media (min-width: 576px ){
     #container_immuni .card{
         width: 80vw;   
@@ -228,9 +228,14 @@ body{
 }
 
 @media (min-width: 1023px){
+    #titolo{
+        margin-bottom: 0;
+        font-size: 5em;
+    }
     #container_immuni .card{
-        width: 80vw;   
+        width: 85vw;   
         flex-direction: row;
+        margin-top: 100px;
     }
     #container_immuni .card .content_immuni{
         margin-top: 100px;
@@ -240,28 +245,30 @@ body{
         width: 90vw;
     }
     #container_immuni  .card:hover .content_immuni{
-        margin-top: 650px;
+        margin-top: 950px;
     }
-    .images_pro img{
-        width: 80%;
+    
+    #didattica_a_distanza > #pro > .img > img{
+        width: 100%;
     }
-    #didattica_a_distanza{
-        margin-top: 40px;
-        display: flex;
-        flex-direction: column;
+    #didattica_a_distanza > #contro > .img > img{
+        width: 100%;
     }
-    #pro, #contro {
+    #pro, #contro{
+        margin-left: 20px;
+        width: 95vw;
         display: flex;
         flex-direction: row;
     }
-
-    #img_pro{
-        flex-grow: 1
+    .img{
+        width: 70vw;
     }
-
-    #testo_pro{
-        flex-grow: 2;
+    .testo{
+        width: 25vw;
     }
-
-
+    #ebook{
+        margin-top: 20px;
+        margin-right: 20px;
+    }
 }
+@media (min-width: 1023px){}
