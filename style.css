@@ -204,20 +204,38 @@ body{
 #didattica_a_distanza img{
     width: 80vw;
 }
+.img_phone{
+    display: none;
+}
 
-@media (min-width: 576px ){
+@media (max-width: 415px){
+    .img_phone{
+        display: block;
+    }
+    #img_altro{
+        display: none;
+    }
+    #titolo{
+        font-size: 10px;
+        margin: 0;
+        text-align: center;
+    }
+    #immuni{
+        margin-top: 20px;
+    }
     #container_immuni .card{
         width: 80vw;   
+        margin-top: 0;
     }
     #container_immuni .card .content_immuni{
-        margin-top: 100px;
+        margin-top: 0;
     }
     #container_immuni .card:hover{
         height: 80vh;
         width: 90vw;
     }
     #container_immuni  .card:hover .content_immuni{
-        margin-top: 650px;
+        margin-top: 260px;
     }
     .images_pro img{
         width: 90vw;
@@ -230,12 +248,13 @@ body{
 @media (min-width: 1023px){
     #titolo{
         margin-bottom: 0;
-        font-size: 5em;
+        font-size: 2em;
+        text-align: center;
     }
     #container_immuni .card{
         width: 85vw;   
         flex-direction: row;
-        margin-top: 100px;
+        margin-top: 0;
     }
     #container_immuni .card .content_immuni{
         margin-top: 100px;
@@ -271,4 +290,54 @@ body{
         margin-right: 20px;
     }
 }
-@media (min-width: 1023px){}
+@media (min-width: 1199px){
+    #titolo{
+        margin-bottom: 0;
+        font-size: 2em;
+        text-align: center;
+    }
+    #immuni{
+        margin-top: 0;
+    }
+    #vuoto{
+        width: 10vw;
+    }
+    #container_immuni .card{
+        width: 40vw;   
+        height: 45vh;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    #container_immuni .card .content_immuni{
+        margin-top: 0;
+    }
+    #container_immuni .card:hover{
+        height: 50vh;
+        width: 45vw;
+    }
+    #container_immuni  .card:hover .content_immuni{
+        margin-top: 330px;
+    }
+    #didattica_a_distanza{
+        position: relative;
+        top: 100px;
+    }
+    #didattica_a_distanza > #pro > .img > img{
+        width: 100%;
+    }
+    #didattica_a_distanza > #contro > .img > img{
+        width: 100%;
+    }
+    #pro, #contro{
+        margin-left: 20px;
+        width: 95vw;
+        display: flex;
+        flex-direction: row;
+    }
+    .img{
+        width: 40vw;
+    }
+    .testo{
+        width: 60vw;
+    }
+}
